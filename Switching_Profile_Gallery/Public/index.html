@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="myscripts.js"></script>
+    <title>Switching Profile Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+
+        .body {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .tab {
+            overflow: hidden;
+            /* background-color: violet; */
+            border-radius: 2px 2px;
+        }
+
+
+        .tab button {
+            background-color: initial;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ffdfd3;
+
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            background-color: #957dad;
+        }
+    </style>
+
+</head>
+
+<body background="../Resources/1.jpg">
+    <center>
+        <h1 style="font-family: 'Sansita Swashed', cursive;font-size: 100px; color:#fec8d8 ;">Astro Members</h1>
+    </center>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Cha Eun Woo')"> <img src="../Resources/Cha Eun Woo.jpg"
+                style="width: 189px; height: 250px; border: 1px black;" alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'Jin Jin')"><img src="../Resources/Jin Jin.jpg" style="width: 189px; height: 250px; border: 1px black;"
+                alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'MJ')"><img src="../Resources/MJ.jpeg" style="width: 189px; height: 250px; border: 1px black;"
+                alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'Moon Bin')"><img src="../Resources/Moon Bin.jpg" style="width: 189px; height: 250px; border: 1px black;"
+                alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'Rocky')"><img src="../Resources/Rocky.jpg" style="width: 189px; height: 250px; border: 1px black;"
+                alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'Yoon Sanha')"><img src="../Resources/Yoon Sanha.jpeg" style="width: 189px; height: 250px; border: 1px black;"
+                alt=""></button>
+    </div>
+
+    <div id="Cha Eun Woo" class="tabcontent">
+        <h3>Personal Details:</h3>
+        <p><b>Real Name:</b> Lee Dong Min</p>
+        <p><b>Stage Name:</b> Cha Eun Woo</p>
+        <p><b>Born:</b> March 30, 1997</p>
+        <p><b>Nationality:</b> South Korean</p>
+        <p><b>Labels:</b> Fantagio</p>
+
+
+        <p style="float:right; margin-top: -16%; font-size: 5mm;"><b>More Information:</b><br><br>Lee Dong Min better
+            known by his stage name Cha Eunwoo, is a South
+            Korean <br> singer-songwriter, actor, and model under Fantagio. He is a member of the <br>South Korean boy
+            group ASTRO.</p><br>
+
+    </div>
+
+    <div id="Jin Jin" class="tabcontent">
+        <h3>Personal Details:</h3>
+        <p><b>Real Name:</b> Park Jin Woo</p>
+        <p><b>Stage Name:</b> Jin Jin</b></p>
+        <p><b>Born:</b> March 15, 1996</b></p>
+        <p><b>Nationality:</b> South Korean</b></p>
+        <p><b>Labels:</b> Fantagio</b></p>
+
+        <p style="float:right; margin-top: -16%; font-size: 5mm;"><b>More Information:</b><br><br>Park Jin Woo, better
+            known by his stage name JinJin, is a South Korean rapper,<br> singer-songwriter, composer, and model.
+            He is the leader, main rapper, and lead <br> dancer of the South Korean boy group
+            ASTRO, which debuted on February 23, 2016<br> under the label Fantagio.</p>
+    </div>
+
+    <div id="MJ" class="tabcontent">
+        <h3>Personal Details:</h3>
+        <p><b>Real Name:</b> Kim Myung Jun</p>
+        <p><b>Stage Name:</b> MJ</p>
+        <p><b>Born:</b> March 5, 1994</p>
+        <p><b>Nationality:</b> South Korean</p>
+        <p><b>Labels:</b> Fantagio</p>
+
+        <p style="float:right; margin-top: -16%; font-size: 5mm;"><b>More Information:</b><br><br>Kim Myung Jun,
+            professionally known as MJ,
+            is a South Korean singer-songwriter,musical actor, <br> composer, and model signed under the label
+            Fantagio.
+            On February 23, 2016, he debuted as the <br> main vocalist of the South Korean boy group ASTRO.</p>
+    </div>
+
+
+    <div id="Moon Bin" class="tabcontent">
+        <h3>Personal Details</h3>
+        <p><b>Real Name:</b> Moon Bin</p>
+        <p><b>Stage Name:</b> Moon Bin</p>
+        <p><b>Born:</b> January 26, 199</p>
+        <p><b>Nationality: </b>South Korean</p>
+        <p><b>Labels:</b> Fantagio</p>
+
+        <p style="float:right; margin-top: -16%; font-size: 5mm;"><b>More Information:</b><br><br>Moon Bin,
+            professionally known as Moonbin, is a South Korean singer-songwriter, actor,<br> and model signed
+            under Fantagio. He is the center, lead dancer, and lead vocalist of the<br> South Korean boy group ASTRO.</p>
+    </div>
+
+    <div id="Rocky" class="tabcontent">
+        <h3>Personal Details</h3>
+        <p><b>Real Name:</b> Park Min Hyuk</p>
+        <p><b>Stage Name:</b> Rocky</p>
+        <p><b>Born:</b> February 25, 1999</p>
+        <p><b>Nationality:</b> South Korean</p>
+        <p><b>Labels:</b> Fantagio</p>
+
+        <p style="float:right; margin-top: -16%; font-size: 5mm;"><b>More Information:</b><br><br>Park Min Hyuk, better
+            known by his stage name Rocky,
+            is a South Korean singer-songwriter,<br> rapper, dancer, choreographer, composer, and model managed by
+            Fantagio. He is the main dancer, <br>
+            lead rapper and vocalist of the South Korean boy group ASTRO.</p>
+    </div>
+
+    <div id="Yoon Sanha" class="tabcontent">
+        <h3>Personal Details</h3>
+        <p><b>Real Name:</b> Yoon Sanha</p>
+        <p><b>Stage Name:</b> Sanha</p>
+        <p><b>Born:</b> March 21, 2000</p>
+        <p><b>Nationality:</b> South Korean</p>
+        <p><b>Labels:</b> Fantagio</p>
+
+        <p style="float:right; margin-top: -16%; font-size: 5mm;"><b>More Information:</b><br><br>Yoon San Ha, known
+            mononymously as Sanha,
+            is a South Korean singer-songwriter,<br> actor, and model under Fantagio. He is the vocalist and maknaeof
+            the South Korean <br>
+            boy group ASTRO.</p>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+
+</html>
